@@ -1,1 +1,10 @@
-이분탐색
+이분탐색 기본 형태
+while(left<right) {
+    mid = (left+right)/2;
+    if(ar2.get(mid)+val>=N) {
+      right = mid;
+    }
+    else {
+      left = mid+1;
+    }
+}
