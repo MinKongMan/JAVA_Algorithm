@@ -36,8 +36,7 @@ public class Baek_3745_rising_221129 {
 						int mid = 0;
 						while(l<r) {
 							mid = (l+r)/2;
-							if(ar.get(mid)>array[i]) r = mid;
-//							else if(ar.get(mid)==array[i]) break;
+							if(ar.get(mid)>=array[i]) r = mid;
 							else l = mid+1;
 						}
 						ar.set(l, array[i]);
