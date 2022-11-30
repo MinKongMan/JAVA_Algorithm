@@ -49,7 +49,7 @@ public class Baek_16168_parade_221130 {
 			if(array[i]%2!=0) count++;
 		}
 		
-		if(count==0 || count==2 || set.size()==1) System.out.println("YES");
+		if((count==0 || count==2) && set.size()==1) System.out.println("YES");
 		else System.out.println("NO");
 	}
 
